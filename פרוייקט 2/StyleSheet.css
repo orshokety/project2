@@ -1,0 +1,15 @@
+﻿.inDiv {
+    height: 100%;
+    float: right;
+    overflow:hidden
+}
+.imgInDiv {
+    height:180px;
+    float: left;
+}
+.container {
+    width:33%;
+    float:right;
+    height:230px;
+    border-style:solid;
+}
