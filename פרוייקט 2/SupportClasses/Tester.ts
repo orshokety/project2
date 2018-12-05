@@ -3,9 +3,9 @@
     private counter: number;
     private static containerSide: Array<string> = [`right`, `middle`, `left`];
     private static containerLineNumber: number = 1
-    private static j:number=0
+    private static j: number = 0;
     private set Counter(counter: number) {
-        if (counter > 0 && counter <= 5000) {
+        if (counter >= 1 && counter <= 5000) {
             this.counter = counter;
         }
     }
@@ -14,7 +14,7 @@
         while (!this.counter) {
             this.Counter = Number(prompt(`רשום את מספר הפריטים בחנות(1-5000)`));
             if (!this.counter) {
-            alert(`טעות בהזנת מספר אנא רשום מספר בין(1-5000)`)
+                alert(`טעות בהזנת מספר אנא רשום מספר בין(1-5000)`);
             }
         } 
         for (let i = 0; i < this.counter; i++) {

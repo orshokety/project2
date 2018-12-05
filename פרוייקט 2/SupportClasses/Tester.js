@@ -4,7 +4,7 @@ var Tester = /** @class */ (function () {
     }
     Object.defineProperty(Tester.prototype, "Counter", {
         set: function (counter) {
-            if (counter > 0 && counter <= 5000) {
+            if (counter >= 1 && counter <= 5000) {
                 this.counter = counter;
             }
         },
