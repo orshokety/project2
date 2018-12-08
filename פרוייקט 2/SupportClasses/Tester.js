@@ -4,7 +4,7 @@ var Tester = /** @class */ (function () {
     }
     Object.defineProperty(Tester.prototype, "Counter", {
         set: function (counter) {
-            if (counter >= 1 && counter <= 5000) {
+            if (counter >= 1 && counter <= 2500) {
                 this.counter = counter;
             }
         },
@@ -13,9 +13,9 @@ var Tester = /** @class */ (function () {
     });
     Tester.prototype.test = function () {
         while (!this.counter) {
-            this.Counter = Number(prompt("\u05E8\u05E9\u05D5\u05DD \u05D0\u05EA \u05DE\u05E1\u05E4\u05E8 \u05D4\u05E4\u05E8\u05D9\u05D8\u05D9\u05DD \u05D1\u05D7\u05E0\u05D5\u05EA(1-5000)"));
+            this.Counter = Number(prompt("\u05E8\u05E9\u05D5\u05DD \u05D0\u05EA \u05DE\u05E1\u05E4\u05E8 \u05D4\u05E4\u05E8\u05D9\u05D8\u05D9\u05DD \u05D1\u05D7\u05E0\u05D5\u05EA(1-2500)"));
             if (!this.counter) {
-                alert("\u05D8\u05E2\u05D5\u05EA \u05D1\u05D4\u05D6\u05E0\u05EA \u05DE\u05E1\u05E4\u05E8 \u05D0\u05E0\u05D0 \u05E8\u05E9\u05D5\u05DD \u05DE\u05E1\u05E4\u05E8 \u05D1\u05D9\u05DF(1-5000)");
+                alert("\u05D8\u05E2\u05D5\u05EA \u05D1\u05D4\u05D6\u05E0\u05EA \u05DE\u05E1\u05E4\u05E8 \u05D0\u05E0\u05D0 \u05E8\u05E9\u05D5\u05DD \u05DE\u05E1\u05E4\u05E8 \u05D1\u05D9\u05DF(1-2500)");
             }
         }
         for (var i = 0; i < this.counter; i++) {

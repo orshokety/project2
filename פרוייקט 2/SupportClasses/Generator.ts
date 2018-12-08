@@ -7,40 +7,42 @@
     private static fabics: Array<string> = [`כותנה`, `פוליאסטר`, `קשמיר`];
     private static makers: Array<string> = [`קסטרו`, `שוקישוק`, `טימברלנד`, `זארה`, `רנואר`];
     private static countries: Array<string> = [`ישראל`, `צרפת`, `הולנד`, `סין`, `יפן`];
+    static counter: number;
     items: Array<ItemA>
     static getRandomItem(): ItemA {
+
         switch (Random.numberZeroToMax(6)) {
             case 0: {
                 let belt = Generator.newBelt()
                 return belt
-            };
+            }
             case 1: {
                 let hat = Generator.newHat()
                 return hat
-            };
+            }
             case 2: {
                 let jacket = Generator.newJacket()
                 return jacket
-            };
+            }
             case 3: {
                 let pants = Generator.newPants()
                 return pants
-            };
+            }
             case 4: {
                 let shirt = Generator.newShirt()
                 return shirt
-            };
+            }
             case 5: {
                 let shoes = Generator.newShoes()
                 return shoes
-            };
+            }
             case 6: {
                 let dressOrSkirt = Generator.newDressOrSkirt()
                 return dressOrSkirt
-            };
+            }
             default:
         }
-        return
+        
     }
     private static newBelt(): Belt {
         return new Belt(Random.arrayStr(Generator.alegentColors, Generator.alegentColors.length), Random.arrayStr(Generator.buckleMaterials, Generator.buckleMaterials.length), Random.arrayStr(Generator.makers, Generator.makers.length),Random.model(),Random.numberMaxMin(300,100),Random.arrayStr(Generator.alegentColors, Generator.alegentColors.length)); 
